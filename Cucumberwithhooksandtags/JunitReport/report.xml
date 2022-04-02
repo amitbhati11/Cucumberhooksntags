@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="111.673">
+<testcase classname="use hooks for reuse execute common code" name="verify login page with valid credintals" time="69.027">
+<failure message="Unable to establish websocket connection to http://localhost:59779/devtools/browser/a23375f2-2b5b-43f9-8e5c-aad92da093a4&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'ADMIN_SRV-PC', ip: '192.168.88.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_321'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[Given open login page.......................................................passed
+When test with valid 9821416708 and 9458661230..............................passed
+And enter login button......................................................passed
+Then navigated to home page.................................................passed
+
+StackTrace:
+org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:59779/devtools/browser/a23375f2-2b5b-43f9-8e5c-aad92da093a4
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'ADMIN_SRV-PC', ip: '192.168.88.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_321'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.firefox.FirefoxDriver.maybeGetDevTools(FirefoxDriver.java:310)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:440)
+	at Stepdefinationforhooks.loginforhooks.quitbrowser(loginforhooks.java:43)
+]]></failure>
+</testcase>
+<testcase classname="use hooks for reuse execute common code" name="verify login page with invalid credintals" time="42.154">
+<failure message="Unable to establish websocket connection to http://localhost:51504/devtools/browser/6bf247fc-7944-40b3-8992-56a1f43df9f4&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'ADMIN_SRV-PC', ip: '192.168.88.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_321'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.http.ConnectionFailedException"><![CDATA[Given open login page.......................................................passed
+When test with invalid amit and 123456......................................passed
+And enter login button......................................................passed
+Then navigated to home page.................................................passed
+
+StackTrace:
+org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51504/devtools/browser/6bf247fc-7944-40b3-8992-56a1f43df9f4
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'ADMIN_SRV-PC', ip: '192.168.88.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_321'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.firefox.FirefoxDriver.maybeGetDevTools(FirefoxDriver.java:310)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:440)
+	at Stepdefinationforhooks.loginforhooks.quitbrowser(loginforhooks.java:43)
+]]></failure>
+</testcase>
+</testsuite>

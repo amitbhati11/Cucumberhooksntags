@@ -1,0 +1,197 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-02T08:09:00.479Z",
+        "before": [
+          {
+            "result": {
+              "duration": 24742000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stepdefinationforhooks.loginforhooks.browsersetup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "verify login page with valid credintals",
+        "description": "",
+        "id": "use-hooks-for-reuse-execute-common-code;verify-login-page-with-valid-credintals;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:59779/devtools/browser/a23375f2-2b5b-43f9-8e5c-aad92da093a4\nBuild info: version: \u00274.1.2\u0027, revision: \u00279a5a329c5a\u0027\nSystem info: host: \u0027ADMIN_SRV-PC\u0027, ip: \u0027192.168.88.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_321\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.\u003cinit\u003e(NettyWebSocket.java:104)\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)\r\n\tat org.openqa.selenium.devtools.Connection.\u003cinit\u003e(Connection.java:77)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.maybeGetDevTools(FirefoxDriver.java:310)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:440)\r\n\tat Stepdefinationforhooks.loginforhooks.quitbrowser(loginforhooks.java:43)\r\n",
+              "duration": 18884000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Stepdefinationforhooks.loginforhooks.quitbrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14966000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "open login page",
+            "match": {
+              "location": "Stepdefinationforhooks.loginforhooks.open_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3572000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "test with valid 9821416708 and 9458661230",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9821416708",
+                  "offset": 16
+                },
+                {
+                  "val": "9458661230",
+                  "offset": 31
+                }
+              ],
+              "location": "Stepdefinationforhooks.loginforhooks.test_with_valid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2370000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter login button",
+            "match": {
+              "location": "Stepdefinationforhooks.loginforhooks.enter_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3446000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "navigated to home page",
+            "match": {
+              "location": "Stepdefinationforhooks.loginforhooks.navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-02T08:10:09.678Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8482000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stepdefinationforhooks.loginforhooks.browsersetup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "verify login page with invalid credintals",
+        "description": "",
+        "id": "use-hooks-for-reuse-execute-common-code;verify-login-page-with-invalid-credintals;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:51504/devtools/browser/6bf247fc-7944-40b3-8992-56a1f43df9f4\nBuild info: version: \u00274.1.2\u0027, revision: \u00279a5a329c5a\u0027\nSystem info: host: \u0027ADMIN_SRV-PC\u0027, ip: \u0027192.168.88.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_321\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.\u003cinit\u003e(NettyWebSocket.java:104)\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:118)\r\n\tat org.openqa.selenium.devtools.Connection.\u003cinit\u003e(Connection.java:77)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.maybeGetDevTools(FirefoxDriver.java:310)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:440)\r\n\tat Stepdefinationforhooks.loginforhooks.quitbrowser(loginforhooks.java:43)\r\n",
+              "duration": 13545000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Stepdefinationforhooks.loginforhooks.quitbrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11542000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "open login page",
+            "match": {
+              "location": "Stepdefinationforhooks.loginforhooks.open_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3149000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "test with invalid amit and 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "amit",
+                  "offset": 18
+                },
+                {
+                  "val": "123456",
+                  "offset": 27
+                }
+              ],
+              "location": "Stepdefinationforhooks.loginforhooks.test_with_invalid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2286000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "enter login button",
+            "match": {
+              "location": "Stepdefinationforhooks.loginforhooks.enter_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3146000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "navigated to home page",
+            "match": {
+              "location": "Stepdefinationforhooks.loginforhooks.navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "use hooks for reuse execute common code",
+    "description": "",
+    "id": "use-hooks-for-reuse-execute-common-code",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/loginwithhooks/loginhooks.feature",
+    "tags": []
+  }
+]
