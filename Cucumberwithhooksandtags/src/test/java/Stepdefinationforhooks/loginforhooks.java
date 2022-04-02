@@ -61,6 +61,18 @@ loginhooks.enter_pwd(password);
 Thread.sleep(3000);;
 }
 
+@When("^test with invalid (.*) and (.*)$")
+public void test_with_invalid_username_and_password(String username,String password) throws InterruptedException {
+
+	loginhooks=new loginpageforhooks(driver);
+	
+	loginhooks.enter_username(username);
+	loginhooks.enter_pwd(password);
+
+	Thread.sleep(3000);
+
+}
+
 @And("enter login button")
 public void enter_login_button() throws InterruptedException {
 System.out.println("button is clicked");
