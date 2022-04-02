@@ -51,7 +51,7 @@ public void open_login_page() throws InterruptedException {
 	loginhooks =new loginpageforhooks( driver);
 	//loginhooks.loginalert_link();
 	
-	Thread.sleep(2000);
+	Thread.sleep(1000);
 }
 
 @When("^test with valid (.*) and (.*)$")
@@ -72,7 +72,7 @@ public void test_with_invalid_username_and_password(String username,String passw
 	loginhooks.enter_username(username);
 	loginhooks.enter_pwd(password);
 
-	Thread.sleep(3000);
+	Thread.sleep(2000);
 
 }
 
