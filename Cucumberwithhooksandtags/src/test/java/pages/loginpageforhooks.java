@@ -20,7 +20,7 @@ public class loginpageforhooks {
 	@FindBy(xpath="//input[@autocomplete='off' and @type='password']")
 	WebElement pwd;
 	
-	@FindBy(xpath="//button[@class='_2KpZ6l _2HKlqd _3AWRsL and @type='submit']")
+	@FindBy(xpath="//button[@class='_2KpZ6l _2HKlqd _3AWRsL']")
 	WebElement btn;
 	
 	//constructor declaration

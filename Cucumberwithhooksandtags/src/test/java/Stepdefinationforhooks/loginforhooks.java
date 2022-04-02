@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
+import pages.homepage;
 import pages.loginpageforhooks;
 //hooks are @Before,@After,@BeforeStep and @Afterstep
 
@@ -15,6 +16,8 @@ public class loginforhooks {
 	
 	WebDriver driver=null;
 	loginpageforhooks loginhooks;
+	homepage hpage;
+	
 	
 	@Before
 	
@@ -80,15 +83,18 @@ loginhooks =new loginpageforhooks( driver);
 
 loginhooks.loginbtn();
 
-Thread.sleep(3000);
+Thread.sleep(2000);
 
 
 }
 
 @Then("navigated to home page")
-public void navigated_to_home_page() {
+public void navigated_to_home_page() throws InterruptedException {
 
-
+	hpage=new homepage(driver);
+	
+	hpage.navigatemethod();
+Thread.sleep(3000);
 }
 	
 	
