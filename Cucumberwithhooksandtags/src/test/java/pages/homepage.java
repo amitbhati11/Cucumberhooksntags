@@ -9,7 +9,7 @@ public class homepage {
 	
 	WebDriver driver;
 	
-	@FindBy(name="q")
+	@FindBy(xpath="//*[contains(text(),'Amit')]")
 	WebElement homepage;
 	
 	//constructor
@@ -24,7 +24,7 @@ public class homepage {
 	
 	public void navigatemethod() {
 		
-		homepage.sendKeys("apple i phone");
+		homepage.isDisplayed();
 	}
 	
 	
